@@ -16,7 +16,7 @@ function App() {
                           <HomeView />
                       </DefaultLayout>
                   </Route>
-                  <Route path="/about-us" exact>
+                  <Route path="/about-us">
                       <DefaultLayout>
                           <AboutUsView />
                       </DefaultLayout>

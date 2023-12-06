@@ -6,16 +6,16 @@ export default function NavBar() {
             <div className="container">
                 <div className="flex justify-between items-center">
                     <div className="flex gap-5">
-                        <Link to="/path">Product Listings</Link>
-                        <Link to="/path">Dealer / Personal Shopper Sign-up</Link>
+                        <Link to="/coming-sson">Product Listings</Link>
+                        <Link to="/contact-us">Dealer / Personal Shopper Sign-up</Link>
                     </div>
                     <div className="font-inter text-xl tracking-[5px]">
-                        SOPHIANA
+                        <Link to="/">SOPHIANA</Link>
                     </div>
                     <div className="flex gap-5">
-                        <Link to="/path">About SOPHIANA</Link>
-                        <Link to="/path">Personal Shopper Service</Link>
-                        <Link to="/path">Contact us</Link>
+                        <Link to="/about-us">About SOPHIANA</Link>
+                        <Link to="/contact-us">Personal Shopper Service</Link>
+                        <Link to="/contact-us">Contact us</Link>
                     </div>
                 </div>
             </div>

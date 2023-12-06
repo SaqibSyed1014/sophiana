@@ -7,4 +7,6 @@ p{
 }
 @tailwind components;
 @tailwind utilities;
-
+.back-to-top-btn{
+    @apply fixed right-5 bottom-5 rounded-full bg-black w-9 h-9 sm:w-11 sm:h-11 flex justify-center items-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]
+}

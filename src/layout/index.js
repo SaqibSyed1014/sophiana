@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import ScrollToTopBtn from "./components/ScrollToTopBtn";
 
 export default function DefaultLayout({ children }) {
     return (
@@ -7,6 +8,7 @@ export default function DefaultLayout({ children }) {
             <NavBar />
             {children}
             <Footer />
+            <ScrollToTopBtn />
         </>
     )
 }
