@@ -1,0 +1,40 @@
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+.our-partnerships h2{
+    @apply text-4xl font-crimson
+}
+.our-partnerships .sub-heading{
+    @apply font-crimson italic text-[22px] pt-1.5
+}
+.our-partnerships .gallery-layout h3{
+    @apply font-cormorant-sc font-bold tracking-wider uppercase lg:text-[28px] pb-4
+}
+section.major-highlights h2{
+    @apply text-[22px] font-crimson italic font-bold text-center
+}
+.divider-heading{
+    @apply overflow-hidden
+}
+.divider-heading > span{
+    @apply relative inline-block
+}
+.divider-heading > span:before, .divider-heading > span:after{
+    @apply content-[''] absolute top-1/2 border-b-[.5px] overflow-hidden w-screen mx-8 border-oslo-grey
+}
+.divider-heading > span::before{
+    @apply right-full
+}
+.divider-heading > span::after{
+    @apply left-full
+}
+section.major-highlights .gallery-highlights .highlights-image{
+    @apply relative
+}
+section.major-highlights .gallery-highlights .highlights-image label{
+    @apply absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-crimson text-white text-3xl text-center w-full
+}
