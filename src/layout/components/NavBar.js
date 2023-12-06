@@ -9,7 +9,7 @@ export default function NavBar() {
                         <Link to="/path">Product Listings</Link>
                         <Link to="/path">Dealer / Personal Shopper Sign-up</Link>
                     </div>
-                    <div className="font-inter text-xl tracking-[3.75px]">
+                    <div className="font-inter text-xl tracking-[5px]">
                         SOPHIANA
                     </div>
                     <div className="flex gap-5">
