@@ -6,7 +6,7 @@ export default function NavBar() {
             <div className="container">
                 <div className="flex justify-between items-center">
                     <div className="flex gap-5">
-                        <Link to="/coming-sson">Product Listings</Link>
+                        <Link to="/coming-soon">Product Listings</Link>
                         <Link to="/contact-us">Dealer / Personal Shopper Sign-up</Link>
                     </div>
                     <div className="font-inter text-xl tracking-[5px]">
