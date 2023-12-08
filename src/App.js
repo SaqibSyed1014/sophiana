@@ -1,9 +1,9 @@
 import './styles/global.css';
-import './index.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import DefaultLayout from "./layout";
 import HomeView from "./views/Home";
 import AboutUsView from "./views/AboutUs";
+import ContactUsView from "./views/ContactUs";
 import ComingSoonView from "./views/ComingSoon";
 
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -21,6 +21,11 @@ function App() {
                   <Route path="/about-us">
                       <DefaultLayout>
                           <AboutUsView />
+                      </DefaultLayout>
+                  </Route>
+                  <Route path="/contact-us">
+                      <DefaultLayout>
+                          <ContactUsView />
                       </DefaultLayout>
                   </Route>
                   <Route path="/coming-soon">

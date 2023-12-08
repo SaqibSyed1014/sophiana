@@ -1,4 +1,3 @@
-import '../../../styles/home-view.css'
 import { ParallaxBanner } from 'react-scroll-parallax';
 
 function Header() {
@@ -9,7 +8,7 @@ function Header() {
                 { image: '/imgs/header-bg.png', speed: -20, easing: 'ease' }
             ]}
         >
-            <header>
+            <header className="relative flex justify-center items-end h-full">
                 <div className="header-content z-10">
                     <div className="container pb-20 2xl:pb-32">
                         <div className="text-center mx-auto">
