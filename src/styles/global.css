@@ -9,3 +9,7 @@
 html{
     scroll-behavior: smooth;
 }
+
+.bg-wrapper > div{
+    background-size: contain !important;
+}

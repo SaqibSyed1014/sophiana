@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import DefaultLayout from "./layout";
 import HomeView from "./views/Home";
 import AboutUsView from "./views/AboutUs";
+import ComingSoonView from "./views/ComingSoon";
+
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
@@ -19,6 +21,11 @@ function App() {
                   <Route path="/about-us">
                       <DefaultLayout>
                           <AboutUsView />
+                      </DefaultLayout>
+                  </Route>
+                  <Route path="/coming-soon">
+                      <DefaultLayout>
+                          <ComingSoonView />
                       </DefaultLayout>
                   </Route>
               </Switch>
