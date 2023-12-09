@@ -1,11 +1,11 @@
 function ContactForm() {
     return (
         <section>
-            <h2 className="divider-heading text-center text-2xl italic">
+            <h2 className="divider-heading text-center text-xl lg:text-2xl italic">
                 <span>Please fill the form below</span>
             </h2>
 
-            <div className="bg-skin mt-20 pb-20 lg:py-20 lg:px-14 xl:px-40">
+            <div className="bg-skin mt-10 pb-20 lg:py-20 lg:px-14 xl:px-40">
                 <div className="lg:container">
                     <div className="grid lg:grid-cols-2 gap-14 lg:gap-12 xl:gap-20">
                         <div className="image-wrapper flex items-center justify-center">

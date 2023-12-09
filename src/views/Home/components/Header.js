@@ -8,16 +8,16 @@ function Header() {
                 { image: '/imgs/header-bg.png', speed: -20, easing: 'ease' }
             ]}
         >
-            <header className="relative flex justify-center items-end h-full">
+            <header className="relative flex justify-center items-center md:items-end h-full">
                 <div className="header-content z-10">
-                    <div className="container pb-20 2xl:pb-32">
+                    <div className="container md:pb-20 2xl:pb-32">
                         <div className="text-center mx-auto">
-                            <h1 className="font-crimson text-white italic text-5xl pb-14">
+                            <h1 className="font-crimson text-white italic text-4xl lg:text-5xl pb-14">
                                 Luxury Selling & Curating <br/>
                                 <span className="font-cormorant">REDEFINED</span>
                             </h1>
 
-                            <div className="flex flex-col gap-5 px-28">
+                            <div className="flex flex-col gap-5 px-14 md:px-28">
                                 <button
                                     type="button"
                                     className="bg-white text-black border-2 border-white">

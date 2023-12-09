@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="text-center font-inter">
             <Parallax shouldAlwaysCompleteAnimation={true} opacity={[0, 1]} easing="ease">
-                <div className="bg-skin py-16">
+                <div className="hidden md:block bg-skin py-16">
                     <div className="container">
                         <div className="w-3/4 mx-auto">
                             <hr className="mb-10 border-t-2 border-[#636262] "/>

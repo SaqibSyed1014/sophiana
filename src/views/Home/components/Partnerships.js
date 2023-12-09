@@ -3,26 +3,27 @@ import { Parallax } from 'react-scroll-parallax';
 function Partnerships() {
     return (
         <section className="our-partnerships py-32">
-            <div className="container">
-                <div className="w-3/4 mx-auto">
+            <div className="lg:container">
+                <div className="lg:w-3/4 mx-auto">
                     <Parallax opacity={[0, 1]} easing="ease">
-                        <div className="text-center pb-32">
-                                <h2 className="divider-heading uppercase">
+                        <div className="font-crimson text-center pb-32">
+                                <h2 className="divider-heading uppercase text-4xl">
                                 <span>Partnerships Program</span>
                             </h2>
-                            <p className="sub-heading">For Brands, Designers & Jewelers</p>
+                            <hr className="block md:hidden border-[1px] border-[#8E8D8D] w-7/12 mx-auto my-4" />
+                            <p className="sub-heading text-[22px]">For Brands, Designers & Jewelers</p>
                         </div>
                     </Parallax>
 
-                    <div className="gallery-layout container">
+                    <div className="gallery-layout lg:container">
                         <Parallax opacity={[0, 1]} easing="ease">
-                            <div className="grid md:grid-cols-2 items-center justify-center gap-20">
+                            <div className="grid md:grid-cols-2 items-center justify-center gap-0 md:gap-20">
                                 <Parallax speed={10} easing='easeInOut'>
-                                    <div className="">
-                                        <img src="/imgs/gallery-image-1.png" alt="Image 01"/>
+                                    <div className="flex">
+                                        <img className="w-full md:w-auto" src="/imgs/gallery-image-1.png" alt="Image 01"/>
                                     </div>
                                 </Parallax>
-                                <div className="flex justify-center flex-col">
+                                <div className="flex justify-center flex-col pb-20 md:pb-0 px-10 md:px-0">
                                     <h3>Global Reach</h3>
                                     <p>
                                         Sofiana offers a unique opportunity for sellers to showcase your products that
@@ -39,7 +40,7 @@ function Partnerships() {
 
                         <Parallax opacity={[0, 1]} easing="ease">
                             <div className="grid md:grid-cols-2 items-center justify-center gap-20">
-                                <div className="flex justify-center flex-col">
+                                <div className="flex justify-center flex-col px-10 md:px-0">
                                     <h3 className="uppercase">a win-win Opporunity</h3>
                                     <p>
                                         Not only can we showcase your creations to a wide audience, but we also
@@ -52,7 +53,7 @@ function Partnerships() {
                                         happen seamlessly.
                                     </p>
                                 </div>
-                                <Parallax speed={10} easing='easeInOut'>
+                                <Parallax speed={10} easing='easeInOut' className="hidden md:block">
                                     <div className="flex justify-end">
                                         <img src="/imgs/gallery-image-2.png" alt="Image 02"/>
                                     </div>

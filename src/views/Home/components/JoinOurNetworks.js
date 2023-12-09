@@ -1,12 +1,13 @@
 import { Parallax } from "react-scroll-parallax";
+import { ParallaxBanner } from 'react-scroll-parallax';
 
 function JoinOurNetworks() {
     return (
-        <section className="py-32">
-            <div className="container">
+        <section className="lg:py-32">
+            <div className="hidden lg:block container">
                 <Parallax opacity={[0, 1]} easing="ease">
                     <div className="w-3/4 mx-auto">
-                        <div className="grid grid-cols-2 items-center gap-20">
+                        <div className="grid lg:grid-cols-2 items-center gap-20">
                             <Parallax speed={6} easing="easeInOut">
                                 <div className="flex justify-center">
                                     <img src="/imgs/model-image.png" alt="Model Ramp Walk"/>
@@ -33,6 +34,28 @@ function JoinOurNetworks() {
                         </div>
                     </div>
                 </Parallax>
+            </div>
+            <div className="block lg:hidden">
+                <ParallaxBanner
+                    className=""
+                    layers={[
+                        { image: '/imgs/model-image-mobile-bg.png', speed: -10, easing: 'ease' }
+                    ]}
+                >
+                    <div className="relative py-40 flex justify-center items-center font-cormorant-sc">
+                        <div className="content text-white text-center px-10">
+                            <h2 className="text-[22px] capitalize font-bold">Interested in Joining our Reseller Network?</h2>
+                            <hr className="border-[.5px] border-white w-7/12 mx-auto my-7" />
+                            <p className="pb-14 text-base">Sofiana offers a unique opportunity for dealers to showcase products that will reach access to a pool of dedicated clientele. This not only expands your reach but also ensures that your creations are presented and promoted to a diverse and engaged clientele, enhancing your brand visibility and sales potentials!</p>
+                            <button
+                                type="button"
+                                className="bg-transparent text-white border-2 border-white">
+                                Join Our Network Now
+                            </button>
+                        </div>
+                    </div>
+
+                </ParallaxBanner>
             </div>
         </section>
     )
