@@ -51,7 +51,7 @@ export default function NavBar() {
                             <Link to="/contact-us">Personal Shopper Service</Link>
                             <Link to="/contact-us">Contact us</Link>
                         </div>
-                        <div className="block lg:hidden"></div>
+                        <div className="block lg:hidden" />
                     </div>
                 </div>
             </nav>
@@ -60,13 +60,13 @@ export default function NavBar() {
             <div
                 className={`mobile-side-bar bg-white w-full z-50 fixed top-0 left-0 block lg:hidden ${isOpen ? 'expanded' : 'collapsed'}`}
             >
-                <button onClick={() => setIsOpen(false)} className="close-side-bar-btn absolute right-12 top-14">
+                <button onClick={() => setIsOpen(false)} className="close-side-bar-btn absolute right-12 top-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M20 1.75L18.25 0L10 8.25L1.75 0L0 1.75L8.25 10L0 18.25L1.75 20L10 11.75L18.25 20L20 18.25L11.75 10L20 1.75Z" fill="black"/>
                     </svg>
                 </button>
 
-                <div className="side-bar-content px-8 py-28">
+                <div className="side-bar-content px-8 py-20">
                     <ul>
                         <li className="!pb-0">
                             <Link to="/" className="menu-link">Home</Link>

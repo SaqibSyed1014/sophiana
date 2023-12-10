@@ -6,7 +6,7 @@ function HeaderPart() {
             <div className="header-content w-3/4 md:w-2/4 !font-crimson text-white text-center pt-28">
                 <p className="text-2xl pb-8 lg:py-16 2xl:py-24">
                     Sophiana - A new digital place where you dance with diamonds and mingle with masterpieces. Get ready for a luxurious rendezvous with breathtaking jewels, art, and exclusive leather goods.  Sign up now and stay tuned.                    </p>
-                <div className="flex flex-col gap-5 px-20 md:px-28">
+                <div className="flex flex-col gap-5 md:px-28">
                     <button
                         type="button"
                         className="bg-white text-black border-2 border-white">
