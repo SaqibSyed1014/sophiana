@@ -16,8 +16,9 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         crimson: ['Crimson Text', 'sans-serif'],
-        'cormorant-sc': ['Cormorant SC', 'sans-serif'],
+        montserrat: ['Montserrat'],
         cormorant: ['Cormorant Garamond', 'sans-serif'],
+        'cormorant-sc': ['Cormorant SC', 'sans-serif'],
       },
     },
     container: {

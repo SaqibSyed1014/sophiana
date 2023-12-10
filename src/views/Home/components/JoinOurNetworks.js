@@ -8,7 +8,7 @@ function JoinOurNetworks() {
                 <Parallax opacity={[0, 1]} easing="ease">
                     <div className="w-3/4 mx-auto">
                         <div className="grid lg:grid-cols-2 items-center gap-20">
-                            <Parallax speed={6} easing="easeInOut">
+                            <Parallax speed={6}>
                                 <div className="flex justify-center">
                                     <img src="/imgs/model-image.png" alt="Model Ramp Walk"/>
                                 </div>
@@ -37,7 +37,6 @@ function JoinOurNetworks() {
             </div>
             <div className="block lg:hidden">
                 <ParallaxBanner
-                    className=""
                     layers={[
                         { image: '/imgs/model-image-mobile-bg.png', speed: -10, easing: 'ease' }
                     ]}

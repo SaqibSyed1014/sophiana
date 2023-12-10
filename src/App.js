@@ -14,7 +14,7 @@ function App() {
       <ParallaxProvider>
           <NavBar />
               <Routes>
-                  <Route path="/" element={<HomeView />} exact/>
+                  <Route path="/" element={<HomeView />} />
                   <Route path="/about-us" element={<AboutUsView />}/>
                   <Route path="/contact-us" element={<ContactUsView />}/>
                   <Route path="/coming-soon" element={<ComingSoonView />}/>

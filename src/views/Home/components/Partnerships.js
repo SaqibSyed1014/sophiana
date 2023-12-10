@@ -2,11 +2,11 @@ import { Parallax } from 'react-scroll-parallax';
 
 function Partnerships() {
     return (
-        <section className="our-partnerships py-32">
+        <section id="partnershipSection" className="our-partnerships py-32">
             <div className="lg:container">
                 <div className="lg:w-3/4 mx-auto">
                     <Parallax opacity={[0, 1]} easing="ease">
-                        <div className="font-crimson text-center pb-32">
+                        <div className="font-crimson text-center pb-16 md:pb-32">
                                 <h2 className="divider-heading uppercase text-4xl">
                                 <span>Partnerships Program</span>
                             </h2>
@@ -17,8 +17,8 @@ function Partnerships() {
 
                     <div className="gallery-layout lg:container">
                         <Parallax opacity={[0, 1]} easing="ease">
-                            <div className="grid md:grid-cols-2 items-center justify-center gap-0 md:gap-20">
-                                <Parallax speed={10} easing='easeInOut'>
+                            <div className="grid md:grid-cols-2 items-center justify-center gap-10 md:gap-20">
+                                <Parallax speed={3}>
                                     <div className="flex">
                                         <img className="w-full md:w-auto" src="/imgs/gallery-image-1.png" alt="Image 01"/>
                                     </div>
@@ -53,7 +53,7 @@ function Partnerships() {
                                         happen seamlessly.
                                     </p>
                                 </div>
-                                <Parallax speed={10} easing='easeInOut' className="hidden md:block">
+                                <Parallax speed={3} className="hidden md:block">
                                     <div className="flex justify-end">
                                         <img src="/imgs/gallery-image-2.png" alt="Image 02"/>
                                     </div>

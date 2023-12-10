@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+SC:wght@300&family=Crimson+Text:ital@0;1&family=Inter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+SC:wght@300&family=Crimson+Text:ital@0;1&family=Inter&family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -76,5 +75,32 @@ input, textarea, .field-wrapper{
 .custom-radio-btn input:checked+span:after{
     opacity: 1;
     transform: scale(1,1);
+}
+.mobile-side-bar{
+    overflow: hidden;
+    transition: .6s all ease-in-out;
+}
+.mobile-side-bar.expanded{
+    height: 100vh;
+    visibility: visible;
+}
+.mobile-side-bar.collapsed{
+    height: 0;
+    visibility: hidden;
+}
+.mobile-side-bar .side-bar-content label{
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 16px;
+    display: block;
+}
+.mobile-side-bar .side-bar-content ul li{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    font-size: 18px;
 }
 

@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <header className="container font-crimson pt-40 md:pt-32">
+        <header className="container font-crimson pt-36 md:pt-32">
             <div className="lg:w-8/12 px-5 lg:px-0 pb-12">
                 <h2 className="font-bold text-3xl">Get in Touch.</h2>
                 <p className="py-8">
