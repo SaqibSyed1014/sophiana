@@ -28,7 +28,8 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 bg-baltic text-[#F4F4F4] text-base w-full font-crimson py-6 z-30">
+            <div className="bg-skin w-full h-6"></div>
+            <nav className="sticky top-0 left-0 bg-baltic text-[#F4F4F4] text-base w-full font-crimson py-6 z-30">
                 <div className="container">
                     <div className="flex justify-between items-center px-3 lg:px-0">
                         <div className="hidden lg:flex gap-5">
