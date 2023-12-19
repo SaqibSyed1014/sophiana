@@ -21,13 +21,21 @@ input::placeholder, textarea::placeholder{
     font-weight: 200;
     letter-spacing: 2px;
     color: #333232;
-    text-transform: uppercase;
 }
 input, textarea, .field-wrapper{
     border: 1px solid #636262;
     background: #F4EBDE;
     padding: 6px 10px;
     width: 100%;
+    outline: none;
+    box-shadow: none;
+}
+input::placeholder{
+    text-transform: uppercase;
+}
+input:focus, textarea:focus{
+    border: 1px solid black;
+    box-shadow: 0 0 0 0.01rem rgba(0, 0, 0, 0.1);
 }
 
 .custom-radio-btn{
@@ -61,13 +69,13 @@ input, textarea, .field-wrapper{
 .custom-radio-btn span::after{
      content: '';
      display: block;
-     width: 10px;
-     height: 10px;
-     background: #222;
+     width: 12px;
+     height: 12px;
+     background: theme('backgroundColor.baltic');
      position: absolute;
      border-radius: 50%;
-     top: 6.5px;
-     left: 2.5px;
+     top: 4.9px;
+     left: 2px;
      opacity: 0;
      transform: scale(0,0);
      transition: all .2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
@@ -77,15 +85,16 @@ input, textarea, .field-wrapper{
     transform: scale(1,1);
 }
 .mobile-side-bar{
+    height: 100vh;
     overflow: hidden;
     transition: .6s all ease-in-out;
 }
 .mobile-side-bar.expanded{
-    height: 100vh;
+    transform: translateX(0);
     visibility: visible;
 }
 .mobile-side-bar.collapsed{
-    height: 0;
+    transform: translateX(-100%);
     visibility: hidden;
 }
 .mobile-side-bar .side-bar-content label{
@@ -104,3 +113,16 @@ input, textarea, .field-wrapper{
     font-size: 18px;
 }
 
+.vertical-line{
+    height: 50px;
+    width: .5px;
+    display: block;
+    background: #8E8D8D;
+    margin: auto;
+}
+
+.gallery-highlights img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

@@ -15,6 +15,7 @@ export default function NavBar() {
 
     useEffect(() => {
         setIsOpen(false);
+        window.scrollTo(0, 0);
     }, [location.pathname]);
 
     const scrollToSection = async (id) => {
@@ -33,8 +34,8 @@ export default function NavBar() {
                 <div className="container">
                     <div className="flex justify-between items-center px-3 lg:px-0">
                         <div className="hidden lg:flex gap-5">
-                            <Link to="/coming-soon">Product Listings</Link>
-                            <Link to="/contact-us">Dealer / Personal Shopper Sign-up</Link>
+                            <Link reloadDocument to="/coming-soon">Product Listings</Link>
+                            <Link reloadDocument to="/contact-us">Dealer / Personal Shopper Sign-up</Link>
                         </div>
                         <div onClick={() => setIsOpen(true)} className="hamburger-icon block lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 15"
@@ -44,20 +45,20 @@ export default function NavBar() {
                                     fill="white"/>
                             </svg>
                         </div>
-                        <div className="font-inter text-xl tracking-[5px]">
-                            <Link to="/">SOPHIANA</Link>
+                        <div className="font-inter text-xl tracking-[5px] lg:pl-8">
+                            <Link reloadDocument to="/">SOPHIANA</Link>
                         </div>
                         <div className="hidden lg:flex gap-5">
-                            <Link to="/about-us">About SOPHIANA</Link>
-                            <Link to="/contact-us">Personal Shopper Service</Link>
-                            <Link to="/contact-us">Contact us</Link>
+                            <Link reloadDocument to="/about-us">About <span className="italic">SOPHIANA</span></Link>
+                            <Link reloadDocument to="/contact-us">Personal Shopper Service</Link>
+                            <Link reloadDocument to="/contact-us">Contact us</Link>
                         </div>
                         <div className="block lg:hidden" />
                     </div>
                 </div>
             </nav>
 
-        {/* Sidebar */}
+        {/* Mobile Sidebar */}
             <div
                 className={`mobile-side-bar bg-white w-full z-50 fixed top-0 left-0 block lg:hidden ${isOpen ? 'expanded' : 'collapsed'}`}
             >
@@ -67,14 +68,14 @@ export default function NavBar() {
                     </svg>
                 </button>
 
-                <div className="side-bar-content px-8 py-20">
-                    <ul>
+                <div className="side-bar-content py-20">
+                    <ul className="px-8">
                         <li className="!pb-0">
                             <Link to="/" className="menu-link">Home</Link>
                         </li>
                     </ul>
-                    <hr className="my-6" />
-                    <div>
+                    <hr className="my-6 w-4/5" />
+                    <div className="px-8">
                         <label>Dealers</label>
                         <ul>
                             <li>
@@ -83,24 +84,24 @@ export default function NavBar() {
                                     Partnership Program
                                 </span>
                             </li>
-                            <li>
+                            <li className="italic">
                                 <Link to="/contact-us">Sign Up Now</Link>
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="px-8">
                         <label>Personal Shoppers</label>
                         <ul>
                             <li>
                                 <Link to="/coming-soon">Product Listings</Link>
                             </li>
-                            <li className="!pb-0">
+                            <li className="!pb-0 italic">
                                 <Link to="/contact-us">Get Access</Link>
                             </li>
                         </ul>
                     </div>
-                    <hr className="my-6" />
-                    <div>
+                    <hr className="my-6 w-4/5" />
+                    <div className="px-8">
                         <label>Concierge Area</label>
                         <ul>
                             <li>
@@ -108,7 +109,7 @@ export default function NavBar() {
                             </li>
                             <li>
 
-                                <Link to="/about-us">About Sophiana</Link>
+                                <Link to="/about-us">About <span className="italic"> Sophiana</span></Link>
                             </li>
                             <li>
                                 <Link to="/contact-us">Contact Us</Link>

@@ -3,7 +3,10 @@
     @apply italic pt-1.5
 }
 .our-partnerships .gallery-layout h3{
-    @apply font-cormorant-sc font-bold tracking-wider uppercase text-2xl lg:text-[28px] pb-4
+    @apply font-cormorant-sc font-bold lg:font-medium tracking-wider uppercase text-2xl lg:text-3xl pb-4
+}
+.our-partnerships .gallery-layout p{
+    @apply text-base xl:text-lg sm:leading-snug
 }
 section.major-highlights h2{
     @apply text-[22px] font-crimson italic font-bold text-center

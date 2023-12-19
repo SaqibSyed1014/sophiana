@@ -9,13 +9,13 @@ function ContactForm() {
 
             <div className="bg-skin mt-10 pb-20 lg:py-20 lg:px-14 xl:px-40">
                 <div className="lg:container">
-                    <div className="grid lg:grid-cols-2 gap-14 lg:gap-12 xl:gap-20">
+                    <div className="grid lg:grid-cols-2 gap-0 lg:gap-12 xl:gap-20">
                             <div className="image-wrapper flex items-center justify-center">
                                 <Parallax speed={10} easing="ease">
                                     <img className="w-full" src="/imgs/contact-form-img.png" alt="Contact Illustration"/>
                                 </Parallax>
                             </div>
-                        <form className="contact-form grid lg:grid-cols-2 gap-2 xl:gap-4 px-8 md:px-20 lg:px-0">
+                        <form className="contact-form grid lg:grid-cols-2 gap-2 xl:gap-4 px-5 md:px-20 lg:px-0">
                             <div className="col-span-2 lg:col-span-1">
                                 <input type="text" placeholder="First Name *"/>
                             </div>

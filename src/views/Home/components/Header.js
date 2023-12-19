@@ -1,10 +1,11 @@
 import { ParallaxBanner } from 'react-scroll-parallax';
+import { Link } from "react-router-dom";
 
 function HeaderPart() {
     return (
-        <header className="relative flex justify-center items-center md:items-end h-full">
+        <header className="relative flex justify-center items-center h-full">
             <div className="header-content z-10">
-                <div className="container md:pb-20 2xl:pb-32">
+                <div className="container md:pb-14 xl:pb-0">
                     <div className="text-center mx-auto">
                         <h1 className="font-crimson text-white italic text-4xl lg:text-5xl pb-14">
                             Luxury Selling & Curating <br/>
@@ -12,16 +13,22 @@ function HeaderPart() {
                         </h1>
 
                         <div className="flex flex-col gap-5 px-14 md:px-28">
-                            <button
-                                type="button"
-                                className="bg-white text-black border-2 border-white">
-                                Join as Dealer
-                            </button>
-                            <button
-                                type="button"
-                                className="bg-transparent text-white border-2 border-white">
-                                Join as Shopper
-                            </button>
+                            <Link to="/contact-us">
+                                <button
+                                    type="button"
+                                    className="bg-white text-black border-2 border-white !w-full"
+                                >
+                                    Join as Dealer
+                                </button>
+                            </Link>
+                            <Link to="/contact-us">
+                                <button
+                                    type="button"
+                                    className="bg-transparent text-white border-2 border-white"
+                                >
+                                    Join as Shopper
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

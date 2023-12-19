@@ -5,10 +5,9 @@ function JoinOurNetworks() {
     return (
         <section className="lg:py-32">
             <div className="hidden lg:block container">
-                <Parallax opacity={[0, 1]} easing="ease">
                     <div className="w-3/4 mx-auto">
                         <div className="grid lg:grid-cols-2 items-center gap-20">
-                            <Parallax speed={6}>
+                            <Parallax speed={10} easing="ease">
                                 <div className="flex justify-center">
                                     <img src="/imgs/model-image.png" alt="Model Ramp Walk"/>
                                 </div>
@@ -33,7 +32,6 @@ function JoinOurNetworks() {
                             </div>
                         </div>
                     </div>
-                </Parallax>
             </div>
             <div className="block lg:hidden">
                 <ParallaxBanner

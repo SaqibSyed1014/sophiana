@@ -6,6 +6,7 @@ import ContactUsView from "./views/ContactUs";
 import ComingSoonView from "./views/ComingSoon";
 import NavBar from "./layout/components/NavBar";
 import Footer from "./layout/components/Footer";
+import ScrollToTopBtn from "./layout/components/ScrollToTopBtn";
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -20,6 +21,7 @@ function App() {
                   <Route path="/coming-soon" element={<ComingSoonView />}/>
               </Routes>
           <Footer />
+          <ScrollToTopBtn />
       </ParallaxProvider>
   );
 }
