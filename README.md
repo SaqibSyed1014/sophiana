@@ -1,6 +1,6 @@
 # Sophiana
 
-An inituitive website for Jeweller Dealers
+An intuitive website for Jeweller Dealers with parallax effect
 
 
 ## Packlages Installed
